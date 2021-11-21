@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>Hand gestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" text="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <center>
+
+
+            <h2 class="btn btn-success form-control heading">
+
+
+                Hand Gestures To Emoji
+
+                <br>
+                <br>
+
+                <span>&#128406;
+
+                </span>
+                <span>&#128077;
+
+                </span>
+                <span>&#128078;
+
+                </span>
+                <span>&#128079;
+
+                </span>
+                <span>&#128080;
+
+                </span>
+            </h2>
+
+
+            <p style="font-size: 22px; font-family:Verdana, Geneva, Tahoma, sans-serif;" class="text-danger">Make a hand
+                gesture to generate emoji of it</p>
+            <h4 style="font-family:Verdana, Geneva, Tahoma, sans-serif;" class="text-danger">On the follwoing emojis the
+                model is trained-</h4>
+            <br>
+            
+
+            </h5>
+            
+            <br>
+
+
+            <h3><span>&#129304;</span>
+                <span>&#9996;</span>
+                <span>&#128076;</span>
+                <span>&#10084;&#65039;</span></h3>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Webcam view - </label>
+                <div id="camera">
+                    <br>
+                    <br>
+
+
+                </div>
+                <br>
+                <button onclick="take_snapshot()" class="btn btn-primary">Capture Image</button>
+                <br><br>
+
+            </div>
+
+            <label>Prediction - </label>
+            <p class="gesture_name" id="result_gesture_name"></p>
+            <p class="emoji" id="result_emoji"></p> 
+          </div>
+    
+          <br><br><br>
+               
+
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Snapshot</label>
+                <div id="result">
+                    <br>
+                    <br>
+
+
+                </div>
+                <br>
+                <button onclick="check()" class="btn btn-primary">Predict Hand Gesture</button>
+                <br><br>
+
+            </div>
+
+    </div>
+    </center>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+body{
+  background-color: #e9ca92;
+  font-family:cursive;
+  font-size:medium
+}
+
+.heading{
+
+    line-height: 20px;
+    padding-bottom:65px;
+    font-family:'Courier New', Courier, monospace !important;
+    font-size:28;
+}
+
+#result, #camera{
+    border-style:groove ;
+}
